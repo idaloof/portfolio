@@ -1,0 +1,26 @@
+.site-header {
+    padding: 2vw;
+}
+
+header .site-header {
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    border-radius: 10px;
+
+}
+
+.title a {
+    text-decoration: none !important;
+}
+
+.title {
+    padding-right: 50%;
+}
+
+#nav {
+    text-align: center;
+}
