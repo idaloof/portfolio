@@ -1,4 +1,14 @@
 /* Page footer */
+footer {
+    padding: 1.4%;
+    background-color: $background-color;
+}
+
+.social {
+    text-align: right;
+    padding-right: 2vw;
+}
+
 .social a {
     text-decoration: none;
     font-size: 1.7em;
