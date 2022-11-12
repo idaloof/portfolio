@@ -5,14 +5,19 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../node_modules/normalize.css/normalize';
+
 @import 'variables';
 @import 'blockquotes';
 @import 'code';
 @import 'mobile-menu';
+@import 'header';
+@import 'footer';
+@import 'main';
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 body {
-    background-color: $background-color;
+    background-color: $background-alternative-color;
 }
 
 * {
