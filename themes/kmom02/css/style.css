@@ -6464,18 +6464,19 @@ pre code {
   transition: height 0.5s ease-in !important;
 }
 
-.nav ul {
+nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 1em 0;
   list-style: none;
+  font-size: 20px;
 }
 
-.nav ul li {
+nav ul li {
   padding: 0 1em;
 }
 
-.nav a, .nav-toggle {
+nav a, .nav-toggle {
   color: #333;
 }
 
@@ -6487,16 +6488,16 @@ pre code {
   .header {
     flex-direction: column;
   }
-  .nav ul {
+  nav ul {
     flex-direction: column;
     padding-bottom: 1em;
   }
-  .nav ul li {
+  nav ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .nav ul li a {
+  nav ul li a {
     display: block;
     padding: 0.5em 0;
   }
@@ -6511,8 +6512,56 @@ pre code {
     cursor: pointer;
   }
 }
+.site-header {
+  padding: 2vw;
+}
+
+header .site-header {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  border-radius: 10px;
+}
+
+.title a {
+  text-decoration: none !important;
+}
+
+.title {
+  padding-right: 50%;
+}
+
+#nav {
+  text-align: center;
+}
+
+/* Page footer */
+footer {
+  padding: 1.4%;
+  background-color: bisque;
+}
+
+.social {
+  text-align: right;
+  padding-right: 2vw;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+/* Style for main-attribute */
+main {
+  margin: 0 auto;
+  width: 70%;
+}
+
 body {
-  background-color: #8c99ab;
+  background-color: #e0fbfc;
 }
 
 * {
@@ -6520,11 +6569,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
-}
-
-.social a {
-  text-decoration: none;
-  font-size: 1.7em;
 }
