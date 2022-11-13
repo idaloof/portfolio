@@ -6424,7 +6424,6 @@ template {
 
 /* Variables */ /* Blockquote */
 blockquote {
-  font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
   border-left: 0.5em solid #f5f5f5;
@@ -6437,9 +6436,6 @@ code {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
-  font-family: monospace;
-  font-size: 0.85rem;
-  line-height: 1.9824;
 }
 
 pre {
@@ -6456,7 +6452,6 @@ pre code {
   border: 0 none;
   background: transparent;
   overflow-x: auto;
-  line-height: 1.4;
 }
 
 .slide {
@@ -6476,7 +6471,8 @@ nav ul li {
   padding: 0 1em;
 }
 
-nav a, .nav-toggle {
+nav a,
+.nav-toggle {
   color: #333;
 }
 
@@ -6517,7 +6513,7 @@ nav a, .nav-toggle {
 }
 
 header .site-header {
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
   display: flex;
   justify-content: space-between;
 }
@@ -6534,14 +6530,15 @@ header .site-header {
   padding-right: 50%;
 }
 
-#nav {
+.nav {
   text-align: center;
 }
 
 /* Page footer */
 footer {
   padding: 1.4%;
-  background-color: bisque;
+  background-color: rgb(255, 228, 196);
+  background-repeat: repeat-y;
 }
 
 .social {
@@ -6551,7 +6548,6 @@ footer {
 
 .social a {
   text-decoration: none;
-  font-size: 1.7em;
 }
 
 /* Style for main-attribute */
@@ -6560,16 +6556,43 @@ main {
   width: 70%;
 }
 
-body {
-  background-color: #e0fbfc;
-}
-
+/* Document */
 * {
   color: rgb(45, 43, 43);
   font-family: "Roboto", sans-serif;
 }
 
+/* Blockquote */
+blockquote {
+  font-style: italic;
+}
+
+/* Code */
+code {
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
+}
+
+pre code {
+  line-height: 1.4;
+}
+
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Open Sans", sans-serif;
+}
+
+/* Footer */
+.social a {
+  font-size: 1.7em;
+}
+
+body {
+  background-color: #e0fbfc;
 }
