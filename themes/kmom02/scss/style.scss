@@ -14,12 +14,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'footer';
 @import 'main';
 @import 'typography';
+@import 'doc_elements';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-
-body {
-    background-color: $background-alternative-color;
-    clear: both;
-    min-height: 400px;
-    margin-bottom: 150px;
-}
