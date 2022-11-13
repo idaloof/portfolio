@@ -6538,7 +6538,6 @@ header .site-header {
 footer {
   padding: 1.4%;
   background-color: rgb(255, 228, 196);
-  background-repeat: repeat-y;
 }
 
 .social {
@@ -6553,18 +6552,51 @@ footer {
 /* Style for main-attribute */
 main {
   margin: 0 auto;
-  width: 70%;
 }
 
+/** Typography for portfolio */
 /* Document */
 * {
-  color: rgb(45, 43, 43);
+  color: #333;
   font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.4;
+}
+
+/* Main element */
+main {
+  max-width: 70rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.1em;
+  margin-bottom: 1.54em;
+  letter-spacing: 0.7px;
+}
+
+/* Lists */
+ul {
+  font-size: 1.1em;
+  margin-bottom: 1.54em;
+}
+
+li {
+  margin-bottom: 0.54em;
 }
 
 /* Blockquote */
 blockquote {
   font-style: italic;
+  margin-bottom: 1.54em;
 }
 
 /* Code */
@@ -6572,6 +6604,7 @@ code {
   font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
+  margin-bottom: 1.54em;
 }
 
 pre code {
@@ -6593,6 +6626,12 @@ h6 {
   font-size: 1.7em;
 }
 
+/* Responsiveness */
+@media (min-width: 64em) {
+  html {
+    font-size: 112, 5%;
+  }
+}
 body {
   background-color: #e0fbfc;
 }
