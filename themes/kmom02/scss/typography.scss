@@ -1,0 +1,36 @@
+/* Document */
+* {
+    color: $font-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+}
+
+/* Code */
+code {
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
+}
+
+pre code {
+    line-height: 1.4;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+.social a {
+    font-size: 1.7em;
+}
