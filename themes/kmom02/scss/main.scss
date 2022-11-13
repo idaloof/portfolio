@@ -1,4 +1,9 @@
 /* Style for main-attribute */
 main {
     margin: 0 auto;
+    min-height: 30em;
+}
+
+main img {
+    border-radius: 50px;
 }
