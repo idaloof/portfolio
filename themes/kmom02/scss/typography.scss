@@ -31,13 +31,15 @@ p {
 }
 
 /* Lists */
-ul {
-    font-size: $base-font-size;
-    margin-bottom: $magic-number;
-}
+main {
+    ul {
+        font-size: $base-font-size;
+        margin-bottom: $magic-number;
+    }
 
-li {
-    margin-bottom: $magic-number - 1;
+    li {
+        margin-bottom: $magic-number - 1;
+    }
 }
 
 /* Blockquote */
@@ -49,8 +51,8 @@ blockquote {
 /* Code */
 code {
     font-family: monospace;
-    font-size: 0.85rem;
-    line-height: 1.9824;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
     margin-bottom: $magic-number;
 }
 

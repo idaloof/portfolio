@@ -6584,12 +6584,11 @@ p {
 }
 
 /* Lists */
-ul {
+main ul {
   font-size: 1.1em;
   margin-bottom: 1.54em;
 }
-
-li {
+main li {
   margin-bottom: 0.54em;
 }
 
@@ -6602,8 +6601,8 @@ blockquote {
 /* Code */
 code {
   font-family: monospace;
-  font-size: 0.85rem;
-  line-height: 1.9824;
+  font-size: 1.1em;
+  line-height: 1.4;
   margin-bottom: 1.54em;
 }
 
