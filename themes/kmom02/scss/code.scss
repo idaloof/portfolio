@@ -22,3 +22,10 @@ pre code {
     background: transparent;
     overflow-x: auto;
 }
+
+/* Responsiveness */
+@media screen and (max-width: 34.75rem) {
+    main code {
+        font-size: 2.1vmin;
+    }
+}
