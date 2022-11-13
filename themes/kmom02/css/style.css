@@ -6454,6 +6454,12 @@ pre code {
   overflow-x: auto;
 }
 
+/* Responsiveness */
+@media screen and (max-width: 34.75rem) {
+  main code {
+    font-size: 2.1vmin;
+  }
+}
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
@@ -6540,7 +6546,6 @@ footer {
   background-color: rgb(255, 228, 196);
   bottom: 0;
   width: 100%;
-  position: fixed;
 }
 
 .social {
@@ -6555,6 +6560,11 @@ footer {
 /* Style for main-attribute */
 main {
   margin: 0 auto;
+  min-height: 30em;
+}
+
+main img {
+  border-radius: 50px;
 }
 
 /** Typography for portfolio */
@@ -6634,9 +6644,21 @@ h6 {
     font-size: 112, 5%;
   }
 }
+/* Style for higher level elements */
+/* Mixin for width and overflow */
+/* body element */
 body {
-  background-color: #e0fbfc;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #e0fbfc;
   clear: both;
   min-height: 400px;
   margin-bottom: 150px;
+}
+
+/* html element */
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(255, 228, 196);
 }
