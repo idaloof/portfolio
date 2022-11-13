@@ -1,12 +1,49 @@
+/** Typography for portfolio */
+
+
+
 /* Document */
 * {
     color: $font-color;
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: $base-line-height;
+}
+
+/* Main element */
+main {
+    max-width: 70rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+/* Paragraphs */
+p {
+    font-size: $base-font-size;
+    margin-bottom: $magic-number;
+    letter-spacing: 0.7px;
+}
+
+/* Lists */
+ul {
+    font-size: $base-font-size;
+    margin-bottom: $magic-number;
+}
+
+li {
+    margin-bottom: $magic-number - 1;
+}
+
 /* Blockquote */
 blockquote {
     font-style: italic;
+    margin-bottom: $magic-number;
 }
 
 /* Code */
@@ -14,10 +51,11 @@ code {
     font-family: monospace;
     font-size: 0.85rem;
     line-height: 1.9824;
+    margin-bottom: $magic-number;
 }
 
 pre code {
-    line-height: 1.4;
+    line-height: $base-line-height;
 }
 
 /* Headings */
@@ -33,4 +71,11 @@ h6 {
 /* Footer */
 .social a {
     font-size: 1.7em;
+}
+
+/* Responsiveness */
+@media (min-width: 64em) {
+    html {
+        font-size: 112,5%;
+    }
 }
