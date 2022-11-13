@@ -19,4 +19,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 
 body {
     background-color: $background-alternative-color;
+    clear: both;
+    min-height: 400px;
+    margin-bottom: 150px;
 }

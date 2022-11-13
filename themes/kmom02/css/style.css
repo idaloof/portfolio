@@ -6538,6 +6538,9 @@ header .site-header {
 footer {
   padding: 1.4%;
   background-color: rgb(255, 228, 196);
+  bottom: 0;
+  width: 100%;
+  position: fixed;
 }
 
 .social {
@@ -6633,4 +6636,7 @@ h6 {
 }
 body {
   background-color: #e0fbfc;
+  clear: both;
+  min-height: 400px;
+  margin-bottom: 150px;
 }
