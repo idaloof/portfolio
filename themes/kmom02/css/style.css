@@ -6424,6 +6424,7 @@ template {
 
 /* Variables */ /* Blockquote */
 blockquote {
+  font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
   border-left: 0.5em solid #f5f5f5;
@@ -6436,6 +6437,9 @@ code {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
+  font-family: monospace;
+  font-size: 0.85rem;
+  line-height: 1.9824;
 }
 
 pre {
@@ -6452,33 +6456,26 @@ pre code {
   border: 0 none;
   background: transparent;
   overflow-x: auto;
+  line-height: 1.4;
 }
 
-/* Responsiveness */
-@media screen and (max-width: 34.75rem) {
-  main code {
-    font-size: 2.1vmin;
-  }
-}
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;
 }
 
-nav ul {
+.nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 1em 0;
   list-style: none;
-  font-size: 20px;
 }
 
-nav ul li {
+.nav ul li {
   padding: 0 1em;
 }
 
-nav a,
-.nav-toggle {
+.nav a, .nav-toggle {
   color: #333;
 }
 
@@ -6490,16 +6487,16 @@ nav a,
   .header {
     flex-direction: column;
   }
-  nav ul {
+  .nav ul {
     flex-direction: column;
     padding-bottom: 1em;
   }
-  nav ul li {
+  .nav ul li {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  nav ul li a {
+  .nav ul li a {
     display: block;
     padding: 0.5em 0;
   }
@@ -6513,152 +6510,4 @@ nav a,
     text-align: center;
     cursor: pointer;
   }
-}
-.site-header {
-  padding: 2vw;
-}
-
-header .site-header {
-  background-color: rgb(255, 228, 196);
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo img {
-  border-radius: 10px;
-}
-
-.title a {
-  text-decoration: none !important;
-}
-
-.title {
-  padding-right: 50%;
-}
-
-.nav {
-  text-align: center;
-}
-
-/* Page footer */
-footer {
-  padding: 1.4%;
-  background-color: rgb(255, 228, 196);
-  bottom: 0;
-  width: 100%;
-}
-
-.social {
-  text-align: right;
-  padding-right: 2vw;
-}
-
-.social a {
-  text-decoration: none;
-}
-
-/* Style for main-attribute */
-main {
-  margin: 0 auto;
-  min-height: 30em;
-}
-
-main img {
-  border-radius: 50px;
-}
-
-/** Typography for portfolio */
-/* Document */
-* {
-  color: #333;
-  font-family: "Roboto", sans-serif;
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  line-height: 1.4;
-}
-
-/* Main element */
-main {
-  max-width: 70rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-/* Paragraphs */
-p {
-  font-size: 1.1em;
-  margin-bottom: 1.54em;
-  letter-spacing: 0.7px;
-}
-
-/* Lists */
-main ul {
-  font-size: 1.1em;
-  margin-bottom: 1.54em;
-}
-main li {
-  margin-bottom: 0.54em;
-}
-
-/* Blockquote */
-blockquote {
-  font-style: italic;
-  margin-bottom: 1.54em;
-}
-
-/* Code */
-code {
-  font-family: monospace;
-  font-size: 1.1em;
-  line-height: 1.4;
-  margin-bottom: 1.54em;
-}
-
-pre code {
-  line-height: 1.4;
-}
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* Footer */
-.social a {
-  font-size: 1.7em;
-}
-
-/* Responsiveness */
-@media (min-width: 64em) {
-  html {
-    font-size: 112, 5%;
-  }
-}
-/* Style for higher level elements */
-/* Mixin for width and overflow */
-/* body element */
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  background: #e0fbfc;
-  clear: both;
-  min-height: 400px;
-  margin-bottom: 150px;
-}
-
-/* html element */
-html {
-  max-width: 100%;
-  overflow-x: hidden;
-  background-color: rgb(255, 228, 196);
 }

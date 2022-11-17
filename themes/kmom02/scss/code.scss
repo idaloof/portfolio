@@ -5,6 +5,9 @@ code {
     border: 1px solid #ccc;
     border-radius: 0.3em;
     background: #f5f5f5;
+    font-family: monospace;
+    font-size: 0.85rem;
+    line-height: 1.9824;
 }
 
 pre {
@@ -21,11 +24,5 @@ pre code {
     border: 0 none;
     background: transparent;
     overflow-x: auto;
-}
-
-/* Responsiveness */
-@media screen and (max-width: 34.75rem) {
-    main code {
-        font-size: 2.1vmin;
-    }
+    line-height: 1.4;
 }
